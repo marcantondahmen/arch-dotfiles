@@ -1,5 +1,6 @@
 alias ls="ls --color=always"
 alias la="ls -la"
+alias cat="bat"
 alias gu="gitui"
 alias ld="lazydocker"
 alias dev="fzfProjects"
