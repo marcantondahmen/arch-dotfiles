@@ -15,7 +15,6 @@ alias tn='tmux new -s'
 alias tr='tmux rename-session'
 alias xx='exit'
 alias gl="git log --graph --decorate --branches --color --pretty=format:'%>|(18)%C(blue)%h   %C(auto)%d %Creset%s %C(brightblack)- %cr, %ce%Creset' | less -RC"
-alias srv='sudo mkdir -p /var/run/php && sudo service php8.1-fpm restart && sudo service nginx restart'
 
 export COLORTERM=truecolor
 export PATH="$HOME/.local/bin:/opt/nvim-linux64/bin:$PATH"
