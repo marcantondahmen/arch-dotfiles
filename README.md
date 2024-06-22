@@ -1,4 +1,4 @@
-# Dotfiles
+# Arch Dotfiles
 
 ## Usage
 
