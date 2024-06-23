@@ -2,10 +2,6 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
--- config.default_prog = { "ubuntu" }
-
--- config.front_end = "WebGpu"
-
 config.window_decorations = "RESIZE"
 config.enable_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
@@ -14,8 +10,8 @@ config.use_fancy_tab_bar = false
 config.window_padding = {
 	left = "4pt",
 	right = "4pt",
-	top = "2pt",
-	bottom = "2pt",
+	top = "4pt",
+	bottom = "4pt",
 }
 
 config.initial_cols = 120
