@@ -32,8 +32,8 @@ border_symbol = "│"
 border_style  = { fg = "#545c7e" }
 
 [status]
-separator_open  = ""
-separator_close = ""
+separator_open  = ""
+separator_close = ""
 separator_style = { fg = "#3b4261", bg = "#3b4261" }
 
 # Mode
