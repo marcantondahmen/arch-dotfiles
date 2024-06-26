@@ -1,4 +1,6 @@
-# Arch Dotfiles
+# Marc's Arch Dotfiles
+
+This repository contains all dotfiles that I use for my _day job_ as a software engineer. Feel free to create your own fork and modify them to meet your own requirements. In case you are also looking for a quick way to get Arch-Linux up and running, take a look at the [arch-setup](https://github.com/marcantondahmen/arch-setup) repository.
 
 ## Usage
 
@@ -14,8 +16,12 @@ dotfiles add file
 In order to setup this repository on a new machine, follow these steps:
 
 ```bash
-git clone --bare https://github.com/mdahmenzpf/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/marcantondahmen/arch-dotfiles.git $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout
 ```
+
+---
+
+&copy; 2024 Marc Anton Dahmen, MIT license
