@@ -1,18 +1,18 @@
 configuration {
-    modi: "combi,run,window";
-    icon-theme: "Oranchelo";
-    show-icons: true;
-    terminal: "wezterm";
-    drun-display-format: "{icon} {name}";
-    location: 2;
+	modi: "combi";
+	combi-modes: "window,run";
+	window-format: "{w}  {c}  {t}";
+	combi-display-format: "{mode} {text}";
+	case-sensitive: false;
+	show-icons: false;
+	terminal: "wezterm";
+	drun-display-format: "{icon} {name}";
+	location: 2;
 	fixed-num-lines: false;
 	window-thumbnail: true;
-    disable-history: false;
-    hide-scrollbar: false;
-    display-combi: " All ";
-    display-run: " Run ";
-    display-window: " Window ";
-    sidebar-mode: true;
+	disable-history: false;
+	hide-scrollbar: false;
+	sidebar-mode: false;
 	combi-hide-mode-prefix: false;
 }
 
