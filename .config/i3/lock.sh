@@ -38,7 +38,9 @@ i3lock -c $bg \
 	--date-font $font \
 	--date-size $fontSize \
 	--date-pos="w/2:h-30" \
+	--date-str="%A, %B %d" \
 	--time-color $dark3 \
 	--time-font $font \
 	--time-size $fontSize \
-	--time-pos="w/2:h-52"
+	--time-pos="w/2:h-52" \
+	--time-str="%H:%m"
