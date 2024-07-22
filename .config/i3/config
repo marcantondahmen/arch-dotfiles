@@ -53,9 +53,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- bash ~/.config/i3/lock.sh
 # Lock screen after 15 min of inactivity
 exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"bash ~/.config/i3/lock.sh\""
 
+# Tap and natural scrolling
+exec --no-startup-id bash ~/.config/i3/inverse-scroll.sh
+exec --no-startup-id bash ~/.config/i3/tap-to-click.sh
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
