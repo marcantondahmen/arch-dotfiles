@@ -6,8 +6,8 @@ alias ld="lazydocker"
 alias dev="fzfProjects"
 alias f="fzfFindDir"
 alias ff="fzfFindFile"
-alias dotfiles='/usr/bin/git --git-dir=/home/mad/.dotfiles/ --work-tree=/home/mad'
-alias dot='gitui --directory=/home/mad/.dotfiles/ --workdir=/home/mad/'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot='gitui --directory=$HOME/.dotfiles/ --workdir=$HOME/'
 alias tl='tmux attach -t $(tmux ls | fzf --height 30% --layout=reverse --border | awk -F: '"'"'{print $1}'"'"')'
 alias ta='tmux attach -t'
 alias td='tmux detach'
