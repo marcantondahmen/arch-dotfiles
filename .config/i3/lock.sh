@@ -9,8 +9,9 @@ font="JetBrainsMono Nerd Font Mono"
 fontSize=16
 
 i3lock -c $bg \
+	--screen=1 \
 	--force-clock \
-	--radius 60 \
+	--radius 70 \
 	--ring-width 6 \
 	--inside-color $bg \
 	--ring-color $dark3 \
@@ -31,16 +32,16 @@ i3lock -c $bg \
 	--lockfailed-text '' \
 	--greeter-text  \
 	--greeter-font "$font" \
-	--greeter-size 58 \
+	--greeter-size 64 \
 	--greeter-color $dark3 \
-	--greeter-pos="w/2:(h/2)+17" \
+	--greeter-pos="ix:iy+19" \
 	--date-color $dark3 \
 	--date-font $font \
 	--date-size $fontSize \
-	--date-pos="w/2:h-30" \
+	--date-pos="tx:ty+26" \
 	--date-str="%A, %B %d" \
 	--time-color $dark3 \
 	--time-font $font \
 	--time-size $fontSize \
-	--time-pos="w/2:h-52" \
+	--time-pos="ix:iy*1.75" \
 	--time-str="%H:%m"
