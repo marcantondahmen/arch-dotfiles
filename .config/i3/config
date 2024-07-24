@@ -13,6 +13,14 @@
 
 set $mod Mod4
 
+set $bg 			#1f2335
+set $bgTitle		#1f2335
+set $bgTitleFocused	#292e42
+set $border			#292e42
+set $borderFocused	#545c7e
+set $text			#737aa2
+set $textFocused	#c0caf5
+
 # Start picom
 exec --no-startup-id picom
 
@@ -23,7 +31,7 @@ exec --no-startup-id autorandr --change
 exec_always --no-startup-id autotiling --limit 2
 
 # Set background color
-exec_always --no-startup-id hsetroot -solid "#1f2335"
+exec_always --no-startup-id hsetroot -solid "$bg"
 
 # Set keyboard layouts
 exec_always --no-startup-id setxkbmap -layout us,ch
@@ -228,22 +236,17 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 0
+gaps inner 10
 gaps outer 0
 
-default_border pixel 1
-hide_edge_borders both
+default_border pixel 2
+hide_edge_borders smart
+smart_gaps on
 
-set $bg 			#24283b
-set $bg_dark		#1f2335
-set $bg_highlight	#292e42
-set $fg				#c0caf5
-set $dark5			#737aa2
-
-# target                 title     	bg    			text      	indicator   border
-client.focused           $bg_dark   $bg_highlight  	$fg 		$bg_dark	$bg_dark
-client.focused_inactive  $bg_dark   $bg_dark  		$dark5  	$bg_dark	$bg_dark
-client.unfocused         $bg_dark   $bg_dark  		$dark5  	$bg_dark	$bg_dark
-client.urgent            $bg_dark   $bg_dark  		$fg  		$bg_dark	$bg_dark
-client.placeholder       $bg_dark   $bg_dark  		$dark5  	$bg_dark	$bg_dark
+# target                 title     	bg    			text 			indicator   	border
+client.focused           $bgTitle   $bgTitleFocused	$textFocused 	$borderFocused	$borderFocused
+client.focused_inactive  $bgTitle   $bgTitle  		$text  	  		$border			$border
+client.unfocused         $bgTitle   $bgTitle  		$text  	  		$border			$border
+client.urgent            $bgTitle   $bgTitle  		$text  			$border			$border
+client.placeholder       $bgTitle   $bgTitle  		$text  			$border			$border
 client.background        $bg
