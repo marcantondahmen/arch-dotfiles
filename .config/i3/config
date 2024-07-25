@@ -54,9 +54,6 @@ bindsym $mod+Shift+e exec bash ~/.config/rofi/power.sh
 # Lock the screen manually
 bindsym $mod+Shift+l exec bash ~/.config/i3/lock.sh
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- bash ~/.config/i3/lock.sh
@@ -207,7 +204,7 @@ workspace $ws6 output primary
 workspace $ws7 output primary
 workspace $ws8 output primary
 workspace $ws9 output primary
-workspace $ws10 output primary
+workspace $ws10 output
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
