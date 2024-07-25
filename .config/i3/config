@@ -17,7 +17,7 @@ set $bg 			#1f2335
 set $bgTitle		#1f2335
 set $bgTitleFocused	#292e42
 set $border			#292e42
-set $borderFocused	#545c7e
+set $borderFocused	#3b4261
 set $text			#737aa2
 set $textFocused	#c0caf5
 
@@ -241,12 +241,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 10
+gaps inner 8
 gaps outer 0
 
 default_border pixel 2
-hide_edge_borders smart
-smart_gaps on
 
 # target                 title     	bg    			text 			indicator   	border
 client.focused           $bgTitle   $bgTitleFocused	$textFocused 	$borderFocused	$borderFocused
