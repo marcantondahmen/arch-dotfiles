@@ -14,8 +14,8 @@
 set $mod Mod4
 
 set $bg 			#1f2335
-set $bgTitle		#1f2335
-set $bgTitleFocused	#292e42
+set $bgTitle		#292e42
+set $bgTitleFocused	#3b4261
 set $border			#292e42
 set $borderFocused	#3b4261
 set $text			#737aa2
@@ -68,6 +68,11 @@ exec --no-startup-id bash ~/.config/i3/tap-to-click.sh
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 # exec --no-startup-id nm-applet
+
+# Screenshot
+exec --no-startup-id mkdir -p ~/screenshots
+bindsym $mod+Shift+p exec maim -u --select | xclip -selection clipboard -t image/png
+bindsym $mod+p exec maim -u --select "/home/$USER/screenshots/$(date '+%Y-%m-%d_%H:%M:%S').png"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -247,10 +252,10 @@ gaps outer 0
 
 default_border pixel 2
 
-# target                 title     	bg    			text 			indicator   	border
-client.focused           $bgTitle   $bgTitleFocused	$textFocused 	$borderFocused	$borderFocused
-client.focused_inactive  $bgTitle   $bgTitle  		$text  	  		$border			$border
-client.unfocused         $bgTitle   $bgTitle  		$text  	  		$border			$border
-client.urgent            $bgTitle   $bgTitle  		$text  			$border			$border
-client.placeholder       $bgTitle   $bgTitle  		$text  			$border			$border
+# target                 title     	       bg    			text 			indicator   	border
+client.focused           $bgTitleFocused   $bgTitleFocused	$textFocused 	$borderFocused	$borderFocused
+client.focused_inactive  $bgTitle          $bgTitle   		$text  	  		$border			$border
+client.unfocused         $bgTitle          $bgTitle   		$text  	  		$border			$border
+client.urgent            $bgTitle          $bgTitle   		$text  			$border			$border
+client.placeholder       $bgTitle          $bgTitle   	 	$text  			$border			$border
 client.background        $bg
