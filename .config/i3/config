@@ -58,8 +58,8 @@ bindsym $mod+Shift+l exec bash ~/.config/i3/lock.sh
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- bash ~/.config/i3/lock.sh
 
-# Lock screen after 15 min of inactivity
-exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"bash ~/.config/i3/lock.sh\""
+# Lock screen after 30 min of inactivity
+exec --no-startup-id "xautolock -detectsleep -time 30 -locker \"bash ~/.config/i3/lock.sh\""
 
 # Tap and natural scrolling
 exec --no-startup-id bash ~/.config/i3/inverse-scroll.sh
