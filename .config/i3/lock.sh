@@ -29,6 +29,7 @@ i3lock -c $bg \
 	--verif-text '' \
 	--wrong-text '' \
 	--noinput-text '' \
+	--lock-text '' \
 	--lockfailed-text '' \
 	--greeter-text  \
 	--greeter-font "$font" \
@@ -44,4 +45,4 @@ i3lock -c $bg \
 	--time-font $font \
 	--time-size $fontSize \
 	--time-pos="ix:iy*1.75" \
-	--time-str="%H:%m"
+	--time-str="%H:%M"
