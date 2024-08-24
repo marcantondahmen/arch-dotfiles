@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This repository is no longer maintained. My current dotfiles can be found [here](https://github.com/marcantondahmen/dotfiles).
+
+---
+
 # Marc's Arch Dotfiles
 
 This repository contains all dotfiles that I use for my _day job_ as a software engineer. Feel free to create your own fork and modify them to meet your own requirements. In case you are also looking for a quick way to get Arch-Linux up and running, take a look at the [arch-setup](https://github.com/marcantondahmen/arch-setup) repository.
